@@ -46,7 +46,6 @@ export const AudioPlayer = forwardRef<AudioPlayerRef | undefined, AudioInterface
     const [hasError, setHasError] = useState<boolean>(false);
 
     useEffect(() => {
-      console.log('🐛 init effect');
       // filter out audio.elm operation
       setIsPlaying(false);
       setTotalTime('--:--');
