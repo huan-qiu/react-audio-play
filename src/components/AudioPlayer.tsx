@@ -46,6 +46,7 @@ export const AudioPlayer = forwardRef<AudioPlayerRef | undefined, AudioInterface
     const [hasError, setHasError] = useState<boolean>(false);
 
     useEffect(() => {
+      console.log('🐛 init effect');
       // filter out audio.elm operation
       setIsPlaying(false);
       setTotalTime('--:--');
@@ -479,9 +480,8 @@ export const AudioPlayer = forwardRef<AudioPlayerRef | undefined, AudioInterface
           onLoadedMetadata={handleLoadedMetaData}
           onTimeUpdate={handleUpdateProgress}
           onVolumeChange={handleUpdateVolume}
-        >
-          <source src={src} type="audio/mpeg" />
-        </audio>
+          src={src}
+        />
       </div>
     );
   }
