@@ -1,5 +1,5 @@
 {
-  "name": "react-audio-play",
+  "name": "react-audio-play-beta",
   "version": "1.0.4",
   "description": "React audio player component",
   "homepage": "https://riyaddecoder.github.io/react-audio-play/",
@@ -29,7 +29,7 @@
     "audio-player",
     "typescripts"
   ],
-  "author": "Shahidul Alam Riyad (riyaddecoder)",
+  "author": "Shahidul Alam Riyad (riyaddecoder) huan-qiu",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.3",
@@ -63,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/riyaddecoder/react-audio-play"
+    "url": "git+https://github.com/huan-qiu/react-audio-play"
   },
   "peerDependencies": {
     "react": ">=17"
