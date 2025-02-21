@@ -12,6 +12,7 @@ export const AudioPlayer = forwardRef<AudioPlayerRef | undefined, AudioInterface
       autoPlay = false,
       className = '',
       src,
+      multiple = true,
       loop = false,
       preload = 'auto',
       backgroundColor,
@@ -46,11 +47,9 @@ export const AudioPlayer = forwardRef<AudioPlayerRef | undefined, AudioInterface
     const [hasError, setHasError] = useState<boolean>(false);
 
     useEffect(() => {
-      // filter out audio.elm operation
-      setIsPlaying(false);
-      setTotalTime('--:--');
-      setCanPlay(false);
-      setHasError(false);
+      if (multiple) {
+        handleReload();
+      }
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [src]);
 

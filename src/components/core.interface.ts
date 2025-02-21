@@ -2,6 +2,7 @@ export interface AudioInterface {
   autoPlay?: boolean;
   className?: string;
   src: string;
+  multiple?: boolean;
   loop?: boolean;
   preload?: 'auto' | 'metadata' | 'none';
   backgroundColor?: string;
